@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>贪吃蛇游戏</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        #gameContainer {
+            text-align: center;
+        }
+        #gameCanvas {
+            border: 2px solid black;
+            background-color: white;
+        }
+        #gameInfo {
+            margin-top: 10px;
+        }
+        #startMenu {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="gameContainer">
+        <div id="startMenu">
+            <h1>贪吃蛇游戏</h1>
+            <button id="startButton">开始游戏</button>
+            <select id="difficultySelect">
+                <option value="1">简单</option>
+                <option value="2">中等</option>
+                <option value="3">困难</option>
+            </select>
+        </div>
+        <canvas id="gameCanvas" width="1200" height="600" style="display: none;"></canvas>
+        <div id="gameInfo" style="display: none;">
+            <div id="score">分数: 0</div>
+            <div id="highScore">最高分: 0</div>
+            <div id="level">难度: 1</div>
+        </div>
+        <button id="restartButton" style="display: none;">重新开始</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
